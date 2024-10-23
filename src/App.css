@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #de3e1f;
+    color: white;
+}
+
+.element {
+    padding: 5px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.el1 {
+    display: flex;
+}
+
+.nav-elements2 {
+    display: flex;
+    padding-left: 50px;
+}
+
+.title-bar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f6fb76;
+    padding: 20px;
+}
+
+.email-text,
+.password,
+.am,
+.login-btn {
+    margin: 5px;
+    height: 25px;
+}
+
+.login-btn {
+    background-color: #167906;
+    color: white;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.forget-text {
+    font-style: italic;
+    color: gray;
+}
+
+.fa {
+    color: gray;
+    margin-right: 4px;
+}
+
+.forgrt-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.verify-text {
+    color: #2468ec;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.span-text {
+    color: #ec2c24;
+}
+
+.head {
+    color: #ec2c24;
+}
+
+.captcha {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.verify-text-mobile {
+    color: #ec2c24;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.register-btn {
+    background-color: #f36863;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.title-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register-bg {
+    background-image: url("https://i.ibb.co/Wpr1CG8/IMG-20241023-WA0004.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.rister-form {
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.el {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.el input, .el select {
+    width: 60%;
+}
+
+.t {
+    text-align: right;
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+    .Rister-bg {
+        justify-content: flex-end;
+         /* Form aligned to the right */
+    }
+
+    .rister-form {
+        margin-right: 50px;
+        margin-left: auto;
+        background-color:white;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    .Rister-bg {
+        justify-content: center; /* Form aligned to the center */
+    }
+
+    .rister-form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Small devices */
+@media (max-width: 768px) {
+    .title-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-elements {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .el1,
+    .nav-elements2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+
+    .rister-form {
+        width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .el {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .el input, .el select {
+        width: 100%;
+    }
+
+    .Rister-bg {
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rister-form {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .login-btn, .register-btn {
+        width: 100%;
+    }
+
+    .title-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-elements {
+        padding: 5px;
+    }
+}
